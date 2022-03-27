@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HealthConnect Upcoming Appointments</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="main.js" type="text/javascript"></script>
+</head>
+<body>
+
+<!--- navigation bar -->
+<div class="navigationbar">
+    <a href="index.html">
+        <img class="logo" src="HealthConnect-Logo.png" alt="HealthConnect Logo" >
+    </a>
+    <div class="navtabs">
+        <ul>
+            <a class="currentpage">Appointments</a>
+            <a href="results.html">Results</a>
+            <a>FAQs</a>
+            <a>Account</a>
+            <img class="accounticon" alt="account icon" src="account-icon.png" >
+        </ul>
+    </div>
+</div>
+
+<!--- appointment title and header -->
+<div class="appointmentheader">
+    <h1>Appointments</h1>
+    <p>Schedule a COVID-19 vaccine, booster shot, or antibody test</p>
+    <form>
+        <a href="makeappointment1.html">
+            <button class="button" type=button>MAKE AN APPOINTMENT</button>
+        </a>
+</div>
+
+<!--- search bar -->
+<div class="searchbar">
+    <h3>Upcoming Appointments</h3>
+        <input type="radio" id="vaccine" name="appointmenttype" value="Vaccine">
+        <label for="vaccine">Vaccine</label>
+        <input type="radio" id="test" name="appointmenttype" value="Test">
+        <label for="test">Test</label>
+        <label for="date"> <img class="searchicons" alt="search icon" src= "calendar-icon.png"> Appointment Date:<label>
+            <select name="appointmentdate" id="date">
+                <option value="Jan 30 2022 - Dec 31 2022"> Jan 30 2022 - Dec 31 2022 </option>
+             </select>
+        <label for="location"><img class="searchicons" alt="location icon" src="location-icon.png"> Appointment Location: </label>
+            <select name="appointmentlocation" id="location">
+                <option value="TCS Hall"> TCS Hall </option>
+                <option value="Baker Hall"> Baker Hall </option>
+            </select>
+        <button class="searchbutton" type=button> Search </button>
+</div>
+
+<!--- table for upcoming appointments -->
+<table class="upcomingappointments">
+     <tr>
+        <th>Date</th>
+        <th>Time</th>
+        <th>Appointment Type</th>
+        <th>Location</th>
+        <th>Appointment Details</th>
+    </tr>
+    <tr>
+        <td>January 30, 2022</td>
+        <td>3:45 PM EST</td>
+        <td>COVID-19 Vaccine (Moderna)</td>
+        <td>TCS Hall</td>
+        <td class="viewdetails">
+            <a href="appointmentdetail1.html">View Details</a>
+        </td>
+    </tr>
+    <tr>
+        <td>February 10, 2022</td>
+        <td>9:00 AM EST</td>
+        <td>COVID-19 Antibody Test</td>
+        <td>TCS Hall</td>
+        <td class="viewdetails">View Details</td>
+    </tr>
+    <tr>
+        <td>March 2, 2022</td>
+        <td>6:15 PM EST</td>
+        <td>COVID-19 Antibody Test</td>
+        <td>TCS Hall</td>
+        <td class="viewdetails"> View Details</td>
+    </tr>
+    <tr>
+        <td>March 14, 2022</td>
+        <td>1:15 PM EST</td>
+        <td>COVID-19 Antibody Test</td>
+        <td>TCS Hall</td>
+        <td class="viewdetails">View Details</td>
+    </tr>
+    <tr>
+        <td>April 3, 2022</td>
+        <td>10:30 AM EST</td>
+        <td>COVID-19 Antibody Test</td>
+        <td>TCS Hall</td>
+        <td class="viewdetails">View Details</td>
+    </tr>
+</table>
+
+</body>
+</html>
