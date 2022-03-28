@@ -20,7 +20,7 @@ function addVaccineBrand() {
 function selectVaccineBrand() {
   var brand = document.forms["vaccineForm"]["vaccinebrand"].value;
   if (brand == "") {
-    alert("Error: You must first select a vaccine brand.");
+    alert("Error: You must first select an appointment type.");
     return false;
   }
 }
