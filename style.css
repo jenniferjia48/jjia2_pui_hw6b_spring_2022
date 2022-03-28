@@ -173,7 +173,7 @@ table {
     text-decoration:  underline;
 }
 
-.locationheading, .dateheading,.appointmentformheader {
+.locationheading, .dateheading,.appointmentformheader, .brandheading {
     font-weight:  bold;
 }
 

@@ -44,27 +44,27 @@
     <label for="johnson">Johnson & Johnson</label><br><br>
     <label class="appointmentformheader" for="dosedate">Select dose date:<label>
         <select name="bookappointmentdate" id="dosedate" onclick="selectVaccineBrand()">
-             <option value="January30">January 30, 2022 </option>
-             <option value="January31">January 31, 2022</option>
-             <option value="February1">Febuary 1, 2022 </option>
-             <option value="February2">February 2, 2022</option>
-             <option value="February3">February 3, 2022 </option>
-             <option value="February4">February 4, 2022</option>
+             <option value="January 30, 2022">January 30, 2022 </option>
+             <option value="January 31, 2022">January 31, 2022</option>
+             <option value="February 1, 2022">Febuary 1, 2022 </option>
+             <option value="February 2, 2022">February 2, 2022</option>
+             <option value="February 3, 2022">February 3, 2022 </option>
+             <option value="February 4, 2022">February 4, 2022</option>
         </select><br><br>
     <label class="appointmentformheader" for="dosetime">Select dose time:<label>
         <select name="bookappointmentdate" id="dosetime">
-             <option value="10:00AM">10:00AM </option>
-             <option value="10:30AM">10:30AM</option>
-             <option value="11:00AM">11:00AM </option>
-             <option value="11:30AM">11:30AM</option>
-             <option value="12:00PM">12:00PM </option>
-             <option value="12:30PM">12:30PM</option>
-             <option value="1:00PM">1:00PM </option>
-             <option value="2:30PM">2:30PM</option>
+             <option value="10:00 AM">10:00 AM </option>
+             <option value="10:30 AM">10:30 AM</option>
+             <option value="11:00 AM">11:00 AM </option>
+             <option value="11:30 AM">11:30 AM</option>
+             <option value="12:00 PM">12:00 PM </option>
+             <option value="12:30 PM">12:30 PM</option>
+             <option value="1:00 PM">1:00 PM </option>
+             <option value="2:30 PM">2:30 PM</option>
         </select>
     <p class="appointmentformheaderconfirmation">Please confirm the following vaccine brand:</p>
     <p id="vaccinebrandresults"></p>
-    <input type="submit" value="Book Appointment" onclick="confirmAppointment()" class="formbutton">
+    <input type="submit" value="Book Appointment" onclick="confirmAppointment();setDoseDate(); setDoseTime(); setVaccineBrand();" class="formbutton">
 </div>
 </form>
 

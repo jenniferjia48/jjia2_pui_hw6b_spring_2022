@@ -35,11 +35,22 @@
 <!--- appointment information and details -->
 <div class="appointmentinformation" onload="addVaccineBrand()">
     <h3> Appointment Successfully Booked!</h3>
-    <h4> COVID-19 Vaccine Appointment</h4>
+    <h4>COVID-19 Vaccine Appointment Details:</h4>
+    <p class="brandheading">Vaccine Brand: <span id="vaccinebrandid"></span></p>
+    <script>
+          document.getElementById('vaccinebrandid').innerHTML = localStorage.getItem("vaccinebrandvalue");
+    </script>
+    <p class="dateheading">Appointment Date: <span id="dosedateid"></span> </p>
+    <script>
+          document.getElementById("dosedateid").innerHTML = localStorage.getItem("dosedatevalue");
+    </script>
+    <p class="dateheading">Appointment Time: <span id="dosetimeid"></span></p>
+    <script>
+          document.getElementById("dosetimeid").innerHTML = localStorage.getItem("dosetimevalue");
+    </script>
     <h4>Test Center:</h4>
     <p class="locationheading">TCS Hall</p>
     <p>4665 Forbes Ave, Pittsburgh, PA 15213</p>
-    <p class="dateheading">You will receive an e-mail confirmation shortly.</p>
     <p class="cancelappointment">Cancel Appointment</p>
     <img class="tcsmap" src="tcs-map.png" alt="tcs map">
 </div>

@@ -28,3 +28,32 @@ function confirmAppointment() {
     console.log('booking an appointment')
     console.log(vaccine_brand);
 }
+
+//local storage function for dose date
+function setDoseDate() {
+  var selecteddosedate = document.getElementById("dosedate").value;
+  localStorage.setItem("dosedatevalue", selecteddosedate);
+}
+
+//local storage function for dose time
+function setDoseTime() {
+  var selecteddosetime = document.getElementById("dosetime").value;
+  localStorage.setItem("dosetimevalue", selecteddosetime);
+}
+
+//local storage function for vaccine brand
+function setVaccineBrand() {
+  if (document.getElementById('pfizer').checked) {
+    var selectedvaccinebrand = document.getElementById('pfizer').value;
+    localStorage.setItem("vaccinebrandvalue", selectedvaccinebrand)
+  }
+  else if (document.getElementById('moderna').checked) {
+    var selectedvaccinebrand = document.getElementById('moderna').value;
+    localStorage.setItem("vaccinebrandvalue", selectedvaccinebrand)
+  }
+  else {
+    var selectedvaccinebrand = document.getElementById('johnson').value;
+    localStorage.setItem("vaccinebrandvalue", selectedvaccinebrand);
+  }
+}
+
