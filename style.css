@@ -99,7 +99,7 @@ table {
     border-radius:  8px;
     padding:  10px 30px;
     color:  white;
-    position:  fixed; left:  200px; top: 520px;
+    position:  fixed; left:  200px; top: 530px;
 }
 
 .formbutton2 {
@@ -265,7 +265,7 @@ table {
     border: 1px;
     padding:  5px 50px;
     width: 70%;
-    height:  380px;
+    height:  430px;
     border-radius:  25px;
     box-shadow:  5px 5px 20px 5px rgb(244,244,244);
 }

@@ -6,8 +6,11 @@ function addVaccineBrand() {
   else if (document.getElementById('moderna').checked) {
     vaccine_brand = document.getElementById('moderna').value;
   }
-  else {
+  else if (document.getElementById('johnson').checked) {
     vaccine_brand = document.getElementById('johnson').value;
+  }
+  else {
+    vaccine_brand = document.getElementById('testd').value;
   }
   console.log(vaccine_brand)
   document.getElementById('vaccinebrandresults').innerHTML = vaccine_brand;
@@ -24,7 +27,7 @@ function selectVaccineBrand() {
 
 //confirm appointment feedback
 function confirmAppointment() {
-    alert('Thanks for booking an appointment for the ' + vaccine_brand + ' vaccine. You will receive confirmation shortly.');
+    alert('Thanks for booking an appointment for the ' + vaccine_brand +'. You will receive confirmation shortly.');
     console.log('booking an appointment')
     console.log(vaccine_brand);
 }
@@ -45,14 +48,18 @@ function setDoseTime() {
 function setVaccineBrand() {
   if (document.getElementById('pfizer').checked) {
     var selectedvaccinebrand = document.getElementById('pfizer').value;
-    localStorage.setItem("vaccinebrandvalue", selectedvaccinebrand)
+    localStorage.setItem("vaccinebrandvalue", selectedvaccinebrand);
   }
   else if (document.getElementById('moderna').checked) {
     var selectedvaccinebrand = document.getElementById('moderna').value;
-    localStorage.setItem("vaccinebrandvalue", selectedvaccinebrand)
+    localStorage.setItem("vaccinebrandvalue", selectedvaccinebrand);
+  }
+  else if (document.getElementById('johnson').checked) {
+    var selectedvaccinebrand = document.getElementById('johnson').value;
+    localStorage.setItem("vaccinebrandvalue", selectedvaccinebrand);
   }
   else {
-    var selectedvaccinebrand = document.getElementById('johnson').value;
+    var selectedvaccinebrand = document.getElementById('testd').value;
     localStorage.setItem("vaccinebrandvalue", selectedvaccinebrand);
   }
 }

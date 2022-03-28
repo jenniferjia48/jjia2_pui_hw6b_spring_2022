@@ -34,14 +34,22 @@
 <form name="vaccineForm" action="appointmentdetail1.html" method="post">
 <!--- appointment form -->
 <div class="appointmentforminformation">
-    <p class="appointmentformheader">Testing Location: TCS Hall (4665 Forbes Ave, Pittsburgh, PA 15213)</p>
-    <p class="appointmentformheader">Select a vaccine brand.</p>
-    <input onclick="addVaccineBrand()" type="radio" id="pfizer" name="vaccinebrand" value="Pfizer">
-    <label for="pfizer">Pfizer</label><br>
-    <input onclick="addVaccineBrand()" type="radio" id="moderna" name="vaccinebrand" value="Moderna">
-    <label for="moderna">Moderna</label><br>
-    <input onclick="addVaccineBrand()" type="radio" id="johnson" name="vaccinebrand" value="Johnson & Johnson">
-    <label for="johnson">Johnson & Johnson</label><br><br>
+    <p class="appointmentformheader">Location: TCS Hall (4665 Forbes Ave, Pittsburgh, PA 15213)</p>
+    <p class="appointmentformheader">Select an appointment type.</p>
+    <input type="radio" id="vaccine" name="appointmenttype" value="Vaccine">
+    <label for="vaccine">Vaccine</label>
+    <input type="radio" id="test" name="appointmenttype" value="Test">
+    <label for="test">Test</label>
+    <p class="appointmentformheader">Select a vaccine brand or test version.</p>
+    <input onclick="addVaccineBrand()" type="radio" id="pfizer" name="vaccinebrand" value="Pfizer Vaccine">
+    <label for="pfizer">Pfizer</label>
+    <input onclick="addVaccineBrand()" type="radio" id="moderna" name="vaccinebrand" value="Moderna Vaccine">
+    <label for="moderna">Moderna</label>
+    <input onclick="addVaccineBrand()" type="radio" id="johnson" name="vaccinebrand" value="Johnson & Johnson Vaccine">
+    <label for="johnson">Johnson & Johnson</label>
+    <input onclick="addVaccineBrand()" type="radio" id="testd" name="vaccinebrand" value="COVID-19 Antibody Test">
+    <label for="testd">COVID-19 Antibody Test</label>
+    <br><br>
     <label class="appointmentformheader" for="dosedate">Select dose date:<label>
         <select name="bookappointmentdate" id="dosedate" onclick="selectVaccineBrand()">
              <option value="January 30, 2022">January 30, 2022 </option>
@@ -61,10 +69,10 @@
              <option value="12:30 PM">12:30 PM</option>
              <option value="1:00 PM">1:00 PM </option>
              <option value="2:30 PM">2:30 PM</option>
-        </select>
-    <p class="appointmentformheaderconfirmation">Please confirm the following vaccine brand:</p>
-    <p id="vaccinebrandresults"></p>
-    <input type="submit" value="Book Appointment" onclick="confirmAppointment();setDoseDate(); setDoseTime(); setVaccineBrand();" class="formbutton">
+        </select><br><br>
+    <input type="checkbox" id="vaccinebrandconfirmation" name="vaccinebrandconfirmation" value="confirmed">
+    <label for="vaccinebrandconfirmation">I confirm that I have selected the following appointment: <span id="vaccinebrandresults"></span></label>
+    <input type="submit" value="Book Appointment" onclick="confirmAppointment(); setDoseDate(); setDoseTime(); setVaccineBrand();" class="formbutton">
 </div>
 </form>
 
