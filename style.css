@@ -291,20 +291,20 @@ table {
 }
 
 .dosetimetable {
-    margin-left:  10px;
+    position: fixed; top: 503px; left:  170px;
 }
 
 .dosebrandtable {
-    margin-left:  65px;
+    position: fixed; top: 503px; left:  305px;
 }
 
 .doselocationtable {
-    margin-left:  230px;
+    position: fixed; top: 503px; left:  715px;
 }
 
 .cancelappointmenttable {
     text-decoration:  underline;
-    margin-left:  145px;
+    position: fixed; top: 503px; left:  920px;
 }
 
 
