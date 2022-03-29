@@ -21,7 +21,7 @@ a {
     color: black;
 }
 
-p {
+p, span {
     font-family: 'Open Sans', sans-serif;
     font-weight: regular;
 }
@@ -159,7 +159,7 @@ table {
 }
 
 .upcomingappointments, .resultstable {
-    position:  relative; top:  180px; left:  30px;
+    position:  fixed; top:  450px; left:  30px;
     width:  95%;
     font-family: 'Open Sans', sans-serif;
     text-align:  left;
@@ -279,6 +279,32 @@ table {
     height:  380px;
     border-radius:  25px;
     box-shadow:  5px 5px 20px 5px rgb(244,244,244);
+}
+
+.newappointment {
+    position: relative; top:  210px; left:  25px;
+    display:  inline-block;
+}
+
+.newappointment p {
+    text-align: inline-block;
+}
+
+.dosetimetable {
+    margin-left:  10px;
+}
+
+.dosebrandtable {
+    margin-left:  65px;
+}
+
+.doselocationtable {
+    margin-left:  230px;
+}
+
+.cancelappointmenttable {
+    text-decoration:  underline;
+    margin-left:  145px;
 }
 
 

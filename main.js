@@ -36,12 +36,14 @@ function confirmAppointment() {
 function setDoseDate() {
   var selecteddosedate = document.getElementById("dosedate").value;
   localStorage.setItem("dosedatevalue", selecteddosedate);
+  console.log("dosedatevalue")
 }
 
 //local storage function for dose time
 function setDoseTime() {
   var selecteddosetime = document.getElementById("dosetime").value;
   localStorage.setItem("dosetimevalue", selecteddosetime);
+  console.log("dosetimevalue")
 }
 
 //local storage function for vaccine brand
@@ -62,5 +64,29 @@ function setVaccineBrand() {
     var selectedvaccinebrand = document.getElementById('testd').value;
     localStorage.setItem("vaccinebrandvalue", selectedvaccinebrand);
   }
+  console.log("vaccinebrandvalue")
 }
 
+//store row to local storage when user books an appointment
+function storeRowToUpcomingAppointments () {
+  var aptdate = document.getElementById("dosedate").value;
+  localStorage.setItem("newdaterow", aptdate);
+  var apttime = document.getElementById("dosetime").value;
+  localStorage.setItem("newtimerow", apttime);
+  if (document.getElementById('vaccine').checked) {
+    var apttype = document.getElementById("vaccine");
+    localStorage.setItem("newapttyperow", apttype);
+  }
+  else {
+    var apttype = document.getElementById("test");
+    localStorage.setItem("newapttyperow", apttype);
+  }
+  var aptlocation = "TCS Hall";
+  var viewdetails = "View Details";
+}
+
+
+//append new row to upcoming appointments with local storage
+function appendRowToUpcomingAppointments () {
+  var x
+}

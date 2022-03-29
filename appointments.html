@@ -55,53 +55,25 @@
         <button class="searchbutton" type=button> Search </button>
 </div>
 
-<!--- table for upcoming appointments -->
+<!--- list of upcoming appointments --->
 <table class="upcomingappointments">
-     <tr>
+    <tr>
         <th>Date</th>
         <th>Time</th>
         <th>Appointment Type</th>
         <th>Location</th>
         <th>Appointment Details</th>
     </tr>
-    <tr>
-        <td>January 30, 2022</td>
-        <td>3:45 PM EST</td>
-        <td>COVID-19 Vaccine (Moderna)</td>
-        <td>TCS Hall</td>
-        <td class="viewdetails">
-            <a href="appointmentdetail1.html">View Details</a>
-        </td>
-    </tr>
-    <tr>
-        <td>February 10, 2022</td>
-        <td>9:00 AM EST</td>
-        <td>COVID-19 Antibody Test</td>
-        <td>TCS Hall</td>
-        <td class="viewdetails">View Details</td>
-    </tr>
-    <tr>
-        <td>March 2, 2022</td>
-        <td>6:15 PM EST</td>
-        <td>COVID-19 Antibody Test</td>
-        <td>TCS Hall</td>
-        <td class="viewdetails"> View Details</td>
-    </tr>
-    <tr>
-        <td>March 14, 2022</td>
-        <td>1:15 PM EST</td>
-        <td>COVID-19 Antibody Test</td>
-        <td>TCS Hall</td>
-        <td class="viewdetails">View Details</td>
-    </tr>
-    <tr>
-        <td>April 3, 2022</td>
-        <td>10:30 AM EST</td>
-        <td>COVID-19 Antibody Test</td>
-        <td>TCS Hall</td>
-        <td class="viewdetails">View Details</td>
-    </tr>
-</table>
+</div>
 
+<div class="newappointment">
+    <span id="dosedateid"></span>
+    <span class="dosetimetable" id="dosetimeid"></span>
+    <span class="dosebrandtable" id="vaccinebrandid"></span>
+    <span class="doselocationtable">TCS Hall</span>
+    <span class="cancelappointmenttable">Cancel Appointment</span>
+</div>
+
+<script src="main2.js" type="text/javascript"></script>
 </body>
 </html>
