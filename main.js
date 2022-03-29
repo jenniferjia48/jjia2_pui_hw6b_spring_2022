@@ -46,6 +46,17 @@ function setDoseTime() {
   console.log("dosetimevalue")
 }
 
+//local storage function for location
+function setLocation() {
+  localStorage.setItem('doselocationvalue', "TCS Hall");
+}
+
+
+//local storage function for appointment details
+function setAppointmentDetails() {
+  localStorage.setItem('dosedetailvalue', "Please arrive 15 minutes early. Bring your student ID.");
+}
+
 //local storage function for vaccine brand
 function setVaccineBrand() {
   if (document.getElementById('pfizer').checked) {
@@ -86,7 +97,9 @@ function storeRowToUpcomingAppointments () {
 }
 
 
-//append new row to upcoming appointments with local storage
-function appendRowToUpcomingAppointments () {
-  var x
+//cancel appointment, appointment confirmation page
+function cancelAppointment () {
+  localStorage.clear();
+  alert("You have successfully cancelled your appointment. You will be returned to your upcoming appointments page.");
+  location.href="appointments.html";
 }

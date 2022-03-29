@@ -302,8 +302,7 @@ table {
     position: fixed; top: 503px; left:  715px;
 }
 
-.cancelappointmenttable {
-    text-decoration:  underline;
+.detailappointmenttable {
     position: fixed; top: 503px; left:  920px;
 }
 
