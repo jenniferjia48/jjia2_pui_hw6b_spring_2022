@@ -103,3 +103,13 @@ function cancelAppointment () {
   alert("You have successfully cancelled your appointment. You will be returned to your upcoming appointments page.");
   location.href="appointments.html";
 }
+
+//function to determine whether the user confirmed their appointment via checking the box
+function requiredCheckbox () {
+  if(!form.vaccinebrandconfirmation.checked) {
+    alert("Please confirm your appointment by checking the box.");
+  }
+  else {
+    return true
+  }
+}

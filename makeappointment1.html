@@ -70,9 +70,9 @@
              <option value="1:00 PM">1:00 PM </option>
              <option value="2:30 PM">2:30 PM</option>
         </select><br><br>
-    <input type="checkbox" id="vaccinebrandconfirmation" name="vaccinebrandconfirmation" value="confirmed">
+    <input type="checkbox" id="vaccinebrandconfirmation" name="vaccinebrandconfirmation" value="confirmed" required>
     <label for="vaccinebrandconfirmation">I confirm that I have selected the following appointment: <span id="vaccinebrandresults"></span></label>
-    <input type="submit" value="Book Appointment" onclick="confirmAppointment(); setDoseDate(); setDoseTime(); setVaccineBrand(); setLocation(); setAppointmentDetails()" class="formbutton">
+    <input type="submit" value="Book Appointment" onclick="setDoseDate(); setDoseTime(); setVaccineBrand(); setLocation(); setAppointmentDetails()" class="formbutton">
 </div>
 </form>
 
