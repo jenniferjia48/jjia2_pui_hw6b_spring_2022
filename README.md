@@ -1,6 +1,6 @@
 # jjia2_pui_hw6b_spring_2022
 
-Explanation of html, css, and js files:
+Explanation of files:
 1) index.html: login page
 2) appointments.html: all upcoming appointments
 3) makeappointment1.html: form to schedule an appointment
@@ -10,6 +10,7 @@ Explanation of html, css, and js files:
 7) main.js: functions for interactivity
 8) main2.js: retrieves local storage for appointments.html
 9) main3.js: retrieves local storage for appointmentdetail1.html
+10) Assets folder: contains all images, icons, and visuals used
 
 Explanation of site:
 This is a potential user scenario. When a user enters the site, they are prompted to login using their Andrew ID credentials. After logging in, the user sees an overview of their upcoming appointments in a table. Currently, there is no table data because the user does not have any upcoming appointments. The user is prompted to make an appointment by clicking on the blue button at the top of the page. After clicking the "make an appointment" button, they are prompted to select an appointment type (vaccine or test), their vaccine brand or test version (Pfizer, Moderna, J&J, or the COVID-19 Antiboy Test). The user also selects the date and time of their appointment. Lastly, by using local storage in main.js, the user is required to confirm their inputted appointment type and brand by filling in the checkbox. After confirming their appointment, they are able to book their appointment. The user is brought to an appointment confirmation page. Using local storage, the appointment details page displays the user's inputs. After receiving confirmation, they return to their upcoming appointments. Using local sotage, the user sees that the upcoming appointments table has been populated with the appointment that the user just booked. The user quickly realizes that they need to cancel their appointment. The user clicks on the appointment that they just booked on the upcoming appointments table. The user clicks on the button "Cancel Appointment" and receieves immediate visual confirmation that they have successfully cancelled their appointment. Lastly, the user is brought back to the upcoming appointments page where they see that they have no upcoming appointments, as they successfully cancelled their appointment.
