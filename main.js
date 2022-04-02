@@ -113,3 +113,8 @@ function requiredCheckbox () {
     return true
   }
 }
+
+//function to email for help, faqs
+function emailfaq() {
+  window.location.href= "mailto:jjia2@andrew.cmu.edu"
+}
