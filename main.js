@@ -1,3 +1,13 @@
+//object for user login details
+const user = {
+  username: "jjia2",
+  password: "password123",
+  name: "Jennifer Jia",
+  grade: "junior",
+  major: "business",
+  lastappointment: "1/14/21"
+}
+
 //function to display vaccine brand when booking an appointment
 function addVaccineBrand() {
   if (document.getElementById('pfizer').checked) {
